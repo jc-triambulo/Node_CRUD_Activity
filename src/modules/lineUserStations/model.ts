@@ -10,7 +10,8 @@ export type LineUserStations = {
 
 export const createLineUserStationSchema = z.object({
     userId: z.number({ required_error: "User Id is required" }),
-    stationId: z.number({ required_error: "Station Id is required" })
+    stationId: z.number({ required_error: "Station Id is required" }),
+    status: z.number({ required_error: "Status is required." }),
 });
 
 export type createLineUserStationSchema = z.infer<typeof createLineUserStationSchema>;

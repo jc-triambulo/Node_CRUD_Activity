@@ -41,7 +41,7 @@ app.get("/", (req: Request, res: Response) => {
 app.use("/users", usersRouter);
 app.use("/lines", linesRouter);
 app.use("/stations", stationsRouter);
-app.use("lineUserStations", lineUserStationsRouter)
+app.use("/lineUserStations", lineUserStationsRouter)
 
 app.use(errorHandlerMiddleware);
 
